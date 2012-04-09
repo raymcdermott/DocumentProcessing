@@ -1,0 +1,19 @@
+The idea is
+
+- to obtain a file over HTTP
+
+- split that file up in some way (that way should be provided as a function by the user)
+
+- process a function (again provided) on each chunk in parallel to, as they say in Star Wars, use the cores
+
+- bring the pieces back together using, you guessed it, a function provided by the user
+
+
+That's the use case.  The solution based around node.js
+
+- use formidable to load file
+
+- use async to schedule functions (it has all these function entry points)
+
+In theory it should be done in < 50 lines
+This file was modified by JetBrains WebStorm 3.0.1 for binding GitHub repository
